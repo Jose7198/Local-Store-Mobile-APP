@@ -1,6 +1,6 @@
 # Local-Store-Mobile-APP
 
-Developed as a native Android app with Kotlin tested with a custom backend in SailsJS ()
+Developed as a native Android app with Kotlin tested with a custom backend in SailsJS (https://github.com/Jose7198/Local-Store-Backend)
 
 Includes functionality for the customers of a local store
 
