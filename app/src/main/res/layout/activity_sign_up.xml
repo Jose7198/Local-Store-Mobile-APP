@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.SignUpActivity" android:background="@drawable/backgroundop">
+
+    <Button
+            android:text="@string/signUp"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:id="@+id/btn_signup_action" android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="64dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp" android:background="@drawable/rounded_button"
+            android:textColor="@color/richBlack" android:textSize="18sp"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp" app:srcCompat="@drawable/logo"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="32dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"/>
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/btn_signup_action">
+        <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+        >
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginEnd="64dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="64dp" android:layout_marginTop="32dp"
+                    android:textColorHint="@color/slateGray" android:id="@+id/ti_name">
+
+                <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name" android:backgroundTint="@color/slateGray"
+                        android:textColorHint="@color/slateGray" android:textColor="@color/white"
+                        android:textColorHighlight="@color/slateGray" android:textColorLink="@color/slateGray"
+                        android:id="@+id/input_name"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ti_name"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="64dp"
+                    android:layout_marginEnd="64dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:textColorHint="@color/slateGray" android:id="@+id/ti_last_name">
+
+                <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lastName" android:backgroundTint="@color/slateGray"
+                        android:textColorHint="@color/slateGray" android:textColor="@color/white"
+                        android:id="@+id/input_last_name"/>
+            </android.support.design.widget.TextInputLayout>
+            <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:id="@+id/spinner"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ti_last_name"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="64dp" android:layout_marginEnd="64dp" android:spinnerMode="dialog"
+                    android:entries="@array/planets_array" android:popupBackground="@drawable/spinner_item"
+                    android:backgroundTint="@color/slateGray"
+                    android:textColor="@color/slateGray" android:foregroundTint="@color/slateGray"
+                    android:background="@drawable/spinner_item"/>
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="64dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="64dp" android:layout_marginTop="32dp"
+                    android:textColorHint="@color/slateGray" android:id="@+id/ti_phone">
+
+                <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone" android:backgroundTint="@color/slateGray"
+                        android:textColor="@color/white" android:textColorHint="@color/slateGray"
+                        android:id="@+id/input_phone"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ti_phone"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="64dp" android:layout_marginEnd="64dp"
+                    android:textColorHint="@color/slateGray" android:id="@+id/ti_user">
+
+                <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/user" android:textColorHint="@color/slateGray"
+                        android:textColor="@color/white" android:backgroundTint="@color/slateGray"
+                        android:id="@+id/input_user"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ti_user"
+                    android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="64dp"
+                    android:layout_marginEnd="64dp" android:textColorHint="@color/slateGray" android:id="@+id/ti_pass"
+                    android:layout_marginTop="32dp">
+
+                <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password" android:textColor="@color/white"
+                        android:textColorHint="@color/slateGray" android:backgroundTint="@color/slateGray"
+                        android:id="@+id/input_pass" android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
