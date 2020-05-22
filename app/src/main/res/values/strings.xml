@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">localStore</string>
+    <string name="signUp">Registrarse</string>
+    <string name="logIn">Iniciar Sesión</string>
+    <string name="name">Nombres</string>
+    <string name="lastName">Apellidos</string>
+    <string name="genero">Género</string>
+    <string name="maleGender">Masculino</string>
+    <string name="femaleGender">Femenino</string>
+    <string name="phone">Telefono</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string-array name="planets_array">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+    <string name="home">Inicio</string>
+    <string name="products">Productos</string>
+    <string name="cart">Carrito</string>
+    <string name="bills">Facturas</string>
+    <string name="navigation_drawer_open">Barra lateral abierta</string>
+    <string name="navigation_drawer_close">Barra lateral cerrada</string>
+    <string name="welcomeMsg">Bienvenido, \n</string>
+    <string name="billsNo">Factura</string>
+    <string name="shop">Comprar</string>
+    <string name="total">Total $</string>
+    <string name="date">Fecha</string>
+    <string name="total2">Total</string>
+    <string name="currency">$</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
